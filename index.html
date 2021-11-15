@@ -416,7 +416,7 @@ background-image: radial-gradient(#374566, #010203); */
 <style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here">
 
 </head>
-<body>
+<body onmouseenter=myfunctionjaipre()>
     <div>
     <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
     <div class="container">
@@ -436,7 +436,7 @@ background-image: radial-gradient(#374566, #010203); */
             <div><span>!</span>
             </div>
         </div>
-         <h1>Amal</h1> 
+         <h1>Prerna</h1> 
     </div>
     <canvas id="birthday" style="position: absolute;top: 0px; z-index: -1;"></canvas>
     <div class="card">
@@ -452,11 +452,21 @@ background-image: radial-gradient(#374566, #010203); */
           <p>Hope your day goes great!</p>
         </div>
     </div>
-    <audio autoplay>
-        <source src="./assets/jaipre.mp3" type="audio/mpeg">
+    <audio id="jaiii" autoplay src="./assets/jaipre.mp3">
     </audio>
     <!-- <embed src="./assets/jaipre.mp3" AutoPlay loop hidden> -->
 </div>
+<script>
+     const jaii = document.getElementById("jaiii");
+//     console.log(jaii);
+
+function myfunctionjaipre(){
+    jaii.play();
+}
+    window.onclick = function () {
+        jaii.play();
+  }
+</script>
    
 
 <script>
